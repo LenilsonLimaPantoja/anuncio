@@ -19,30 +19,76 @@
     <div class="container">
       <div class="area-container">
         <div class="topo">
-          880 pessoas assistindo essa apresentação em 28/05/2023
+          880 pessoas assistindo essa apresentação em <span id="dataAt"></span>
         </div>
         <h3>
-          coloque aqui sua Headine com uma promessa que prende a atenção do seu
-          lead
+          Descubra o segredo que permitiu chef's ganharem estrelas michelin
         </h3>
-        <iframe
+        <div
+          id="vid_6478fa3147265d0009b21769"
+          style="position: relative; width: 100%; padding: 56.25% 0 0"
+        >
+          <img
+            id="thumb_6478fa3147265d0009b21769"
+            src="https://images.converteai.net/3cd9b528-1025-4861-ba2f-3ac84d0a2b87/players/6478fa3147265d0009b21769/thumbnail.jpg"
+            style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              display: block;
+            "
+          />
+          <div
+            id="backdrop_6478fa3147265d0009b21769"
+            style="
+              position: absolute;
+              top: 0;
+              width: 100%;
+              height: 100%;
+              -webkit-backdrop-filter: blur(5px);
+              backdrop-filter: blur(5px);
+            "
+          ></div>
+        </div>
+        <script type="text/javascript" id="scr_6478fa3147265d0009b21769">
+          var s = document.createElement("script");
+          (s.src =
+            "https://scripts.converteai.net/3cd9b528-1025-4861-ba2f-3ac84d0a2b87/players/6478fa3147265d0009b21769/player.js"),
+            (s.async = !0),
+            document.head.appendChild(s);
+        </script>
+
+        <!-- <iframe
           class="video"
           src="https://www.youtube.com/embed/KnsNYOPHyTc"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
-        ></iframe>
+        ></iframe> -->
         <div class="btn-text">
-          <button>aqui vai o seu cta</button>
+          <a href="https://culinaria-descomplicada-2826.myshopify.com/products/metodo-culinaria-descomplicada">garanta o método agora!</a>
           <p>compre com desconto no catão</p>
         </div>
         <div
           class="fb-comments"
           data-href="https://developers.facebook.com/docs/plugins/lp20"
           data-numposts="5"
+          style="max-width: 100%"
         ></div>
       </div>
     </div>
+    <script>
+      const data = new Date();
+      const dataAtual = `${String(data.getDate()).padStart("2", 0)}/${String(
+        data.getMonth() + 1
+      ).padStart("2", 0)}/${String(data.getFullYear())}`;
+
+      const dataAt = document.getElementById("dataAt");
+      dataAt.innerHTML = dataAtual;
+    </script>
   </body>
 </html>
